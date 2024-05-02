@@ -20,31 +20,34 @@ async function fetchReddit(sub: string) {
 }
 
 export default definePlugin({
-    name: "Cute-Anime-Boys",
+    name: "Cute-Anime-Girls",
     authors: [{
-        name: "Shady Goat",
-        id: BigInt(376079696489742338),
+        name: "Shady Goat (Original Ver.)",
+        id: 376079696489742338n,
+    },{ 
+        name: "louis (This Modified Ver.)",
+        id: 795182271380193280n
     }],
-    description: "Add a command to send cute anime boys in the chat",
+    description: "Add a command to send cute anime girls in the chat",
     dependencies: ["CommandsAPI"],
     commands: [{
-        name: "anime-boys",
-        description: "Send cute anime boys",
+        name: "anime-girls",
+        description: "Send cute anime girls",
         options: [
             {
                 name: "cat",
-                description: "If set, this will send exclusively cute anime cat boys",
+                description: "If set, this will send exclusively cute anime cat girls",
                 type: ApplicationCommandOptionType.BOOLEAN,
                 required: false,
             },
         ],
 
         async execute(args) {
-            let sub = "cuteanimeboys";
+            let sub = "awwnime";
             if (args.length > 0) {
                 const v = args[0].value as any as boolean;
                 if (v) {
-                    sub = "animecatboys";
+                    sub = "CuteAnimeGirls";
                 }
             }
 
