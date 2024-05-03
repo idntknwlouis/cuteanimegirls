@@ -28,7 +28,7 @@ export default definePlugin({
         name: "louis (This Modified Ver.)",
         id: 795182271380193280n
     }],
-    description: "Add a command to send cute anime girls in the chat",
+    description: "Add a command to send cute anime girls in the chat. Original plugin by Shady Goat",
     dependencies: ["CommandsAPI"],
     commands: [{
         name: "anime-girls",
