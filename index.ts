@@ -22,10 +22,10 @@ async function fetchReddit(sub: string) {
 export default definePlugin({
     name: "Cute-Anime-Girls",
     authors: [{
-        name: "Shady Goat (Original Ver.)",
+        name: "ShadyGoat (Original Ver.)",
         id: 376079696489742338n,
-    },{ 
-        name: "louis (This Modified Ver.)",
+    },{
+        name: "louis (Modified Ver.)",
         id: 795182271380193280n
     }],
     description: "Add a command to send cute anime girls in the chat. Original plugin by Shady Goat",
@@ -48,6 +48,13 @@ export default definePlugin({
                 const v = args[0].value as any as boolean;
                 if (v) {
                     sub = "CuteAnimeGirls";
+                }
+            }
+
+            if (args.length > 1) {
+                const w = args[0].value as any as boolean;
+                if (w) {
+                    sub = "Animewallpaper";
                 }
             }
 
