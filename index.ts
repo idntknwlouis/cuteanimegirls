@@ -47,13 +47,6 @@ export default definePlugin({
             if (args.length > 0) {
                 const v = args[0].value as any as boolean;
                 if (v) {
-                    sub = "CuteAnimeGirls";
-                }
-            }
-
-            if (args.length > 1) {
-                const w = args[0].value as any as boolean;
-                if (w) {
                     sub = "Animewallpaper";
                 }
             }
