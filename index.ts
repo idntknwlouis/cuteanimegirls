@@ -20,10 +20,10 @@ async function fetchReddit(sub: string) {
 }
 
 export default definePlugin({
-    name: "Cute-Anime-Girls",
+    name: "Cute Anime Girls",
     authors: [{
         name: "ShadyGoat (Original Ver.)",
-        id: 376079696489742338n,
+        id: 376079696489742338n
     },{
         name: "louis (Modified Ver.)",
         id: 795182271380193280n
@@ -31,12 +31,12 @@ export default definePlugin({
     description: "Add a command to send cute anime girls in the chat. Original plugin by Shady Goat",
     dependencies: ["CommandsAPI"],
     commands: [{
-        name: "anime-girls",
+        name: "cute-anime-girls",
         description: "Send cute anime girls",
         options: [
             {
                 name: "cat",
-                description: "If set, this will send exclusively cute anime cat girls",
+                description: "If set, this will send exclusively send cute anime cat girls",
                 type: ApplicationCommandOptionType.BOOLEAN,
                 required: false,
             },
